@@ -1,12 +1,12 @@
-import { Header } from "./components"
+import { Header, TaskBar } from "./components";
 
 function App() {
-
   return (
-    <div className="App">
+    <>
       <Header />
-    </div>
-  )
+      <TaskBar />
+    </>
+  );
 }
 
-export default App
+export default App;

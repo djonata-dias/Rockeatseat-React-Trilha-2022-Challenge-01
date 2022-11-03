@@ -22,4 +22,5 @@
 
 body, input, button, span {
   font-family: 'Inter', sans-serif;
+  line-height: 140%;
 }
