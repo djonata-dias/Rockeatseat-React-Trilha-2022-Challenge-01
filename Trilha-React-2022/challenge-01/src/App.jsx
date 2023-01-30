@@ -1,10 +1,10 @@
-import { Header, TaskBar } from "./components";
+import { Header, TaskList } from "./components";
 
 function App() {
   return (
     <>
       <Header />
-      <TaskBar />
+      <TaskList />
     </>
   );
 }

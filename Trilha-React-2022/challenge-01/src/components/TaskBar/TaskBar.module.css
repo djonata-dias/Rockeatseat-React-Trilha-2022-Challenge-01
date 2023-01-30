@@ -34,7 +34,12 @@
     margin-left: 0.5rem;
 }
 
-.createButton:active{
+.createButton:active, .createButton:hover{
+    background-color: var(--blue);
+}
+
+.createButton:active {
     filter: brightness(120%);
-    transition:0.1s;  
+    transition: 0.1s;  
+
 }
