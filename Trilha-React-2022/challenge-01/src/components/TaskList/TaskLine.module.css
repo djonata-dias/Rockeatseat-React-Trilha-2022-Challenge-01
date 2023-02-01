@@ -1,0 +1,73 @@
+.taskLine {
+    background-color: var(--gray-500);
+    padding: 1rem;
+    margin-top: 1rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.taskText {
+    background-color: transparent;
+    border: none;
+    width: 39.5rem;
+    color: var(--gray-100);
+    font-weight: 400;
+}
+
+.trashButton {
+    background-color: transparent;
+    border: none;
+    width: 1.5rem;
+    height: 1.5rem;
+    
+}
+.trashButton svg:hover path {
+    fill: var(--danger);
+    
+}
+
+.trashButton:hover {
+    background-color: var(--gray-400);
+    border-radius: 0.25rem;
+}
+
+.labelCheckBox {
+    display: inline-flex;
+    cursor: pointer;
+    position: relative;
+}
+
+.inputCheckBox  {
+    height: 1.5rem;
+    width: 1.5rem;
+    border: 0.1rem solid var(--blue);
+    outline: none;
+    background-color: var(--gray-500);
+    cursor: pointer;
+    border-radius: 50%;
+    appearance: none;
+    
+}
+
+.inputCheckBox:hover, .inputCheckBox:checked:hover {
+    border-color: var(--blue-dark);
+    opacity: 0.9;
+}
+
+.inputCheckBox:checked {
+    background-color: var(--purple-dark);
+    border: none;
+
+}
+
+.inputCheckBox:checked + .checkMark::before {
+    content: '\2713';
+    color: var(--gray-100);
+    font-weight: 800;
+    position: absolute;
+    left: 0.38rem;
+    top: 0.19rem;
+}
+
